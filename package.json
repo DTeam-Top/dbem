@@ -1,0 +1,96 @@
+{
+  "name": "dbem",
+  "version": "0.0.5",
+  "description": "DBox Extension Manager",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DTeam-Top/dbem.git"
+  },
+  "homepage": "https://github.com/DTeam-Top/dbem/blob/master/README.md",
+  "bugs": "https://github.com/DTeam-Top/dbem/issues",
+  "keywords": [
+    "vscode",
+    "dbox",
+    "extension",
+    "repository",
+    "marketplace"
+  ],
+  "contributors": [
+    "DTeam"
+  ],
+  "author": "DTeam",
+  "license": "MIT",
+  "bin": {
+    "dbem": "out/dbem"
+  },
+  "scripts": {
+    "compile": "tsc && cp src/dbem out/dbem",
+    "watch": "cp src/dbem out/dbem && tsc --watch",
+    "watch-test": "cp src/dbem out/dbem && concurrently \"tsc --watch\" \"mocha --watch\"",
+    "test": "mocha",
+    "prepublishOnly": "tsc && cp src/dbem out/dbem && mocha",
+    "dbem": "out/dbem",
+    "check": "gts check",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run check"
+  },
+  "engines": {
+    "node": ">= 8"
+  },
+  "dependencies": {
+    "ali-oss": "^6.5.1",
+    "aws-sdk": "^2.638.0",
+    "chalk": "^2.4.2",
+    "cheerio": "^1.0.0-rc.1",
+    "commander": "^2.8.1",
+    "denodeify": "^1.2.1",
+    "didyoumean": "^1.2.1",
+    "dropbox": "^4.0.30",
+    "file-type": "^14.1.3",
+    "glob": "^7.0.6",
+    "lodash": "^4.17.10",
+    "markdown-it": "^8.3.1",
+    "mime": "^1.3.4",
+    "minimatch": "^3.0.3",
+    "node-fetch": "^2.6.0",
+    "osenv": "^0.1.3",
+    "parse-semver": "^1.1.1",
+    "read": "^1.0.7",
+    "semver": "^5.1.0",
+    "tmp": "0.0.29",
+    "typed-rest-client": "1.2.0",
+    "url-join": "^1.1.0",
+    "yauzl": "^2.3.1",
+    "yazl": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/ali-oss": "^6.0.4",
+    "@types/cheerio": "^0.22.1",
+    "@types/denodeify": "^1.2.31",
+    "@types/didyoumean": "^1.2.0",
+    "@types/glob": "^7.1.1",
+    "@types/lodash": "^4.14.123",
+    "@types/markdown-it": "0.0.2",
+    "@types/mime": "^1",
+    "@types/minimatch": "^3.0.3",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^8",
+    "@types/node-fetch": "^2.5.5",
+    "@types/read": "^0.0.28",
+    "@types/semver": "^6.0.0",
+    "@types/tmp": "^0.1.0",
+    "@types/url-join": "^4.0.0",
+    "@types/xml2js": "^0.4.4",
+    "@types/yauzl": "^2.9.1",
+    "@types/yazl": "^2.4.2",
+    "concurrently": "^4.1.0",
+    "gts": "^1.1.2",
+    "mocha": "^5.2.0",
+    "source-map-support": "^0.4.2",
+    "typescript": "^3.4.3",
+    "xml2js": "^0.4.12"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+out/
+npm-debug.log
+!dbem/src/test/fixtures/devDependencies/node_modules
+!dbem/src/test/fixtures/packagedDependencies/node_modules

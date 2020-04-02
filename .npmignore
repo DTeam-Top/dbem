@@ -1,0 +1,10 @@
+src/
+test
+out/test/
+.gitignore
+tsconfig.json
+tsd.json
+*.js.map
+package-lock.lock
+.travis.yml
+.vscode/

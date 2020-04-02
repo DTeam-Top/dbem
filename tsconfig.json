@@ -1,0 +1,15 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "declaration": true,
+    "outDir": "out",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["src/test/fixtures/remote/myext/**/*"]
+}

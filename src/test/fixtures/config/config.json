@@ -1,0 +1,10 @@
+{
+  "backends": {
+    "oss": {
+      "oss-key": "value"
+    },
+    "google-drive": {
+      "gd-key": 1
+    }
+  }
+}

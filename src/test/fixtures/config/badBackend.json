@@ -1,0 +1,10 @@
+{
+  "backends": {
+    "unknown-backend": {
+      "oss-key": "value"
+    },
+    "google-driver": {
+      "gd-key": 1
+    }
+  }
+}

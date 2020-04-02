@@ -1,0 +1,7 @@
+{
+  "backends": {
+    "mock": {
+      "key": "value"
+    }
+  }
+}
